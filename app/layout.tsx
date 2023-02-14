@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head />
-			<body className={`${montserrat.className}`}>{children}</body>
+			<body className={`${montserrat.className} ms-32`}>{children}</body>
 		</html>
 	);
 }
