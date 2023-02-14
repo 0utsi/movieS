@@ -26,8 +26,7 @@ export default async function Home() {
 
 	return (
 		<main>
-			<h1>Hello world!</h1>
-			<div className="grid gap-16 grid-cols-fluid">
+			<div className="grid gap-8 grid-cols-fluid">
 				{movies.map((movie: ImovieData) => (
 					<Movie
 						key={movie.id}

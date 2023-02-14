@@ -1,9 +1,8 @@
-import "./globals.css";
+import "./styling/globals.css";
 import { Montserrat } from "@next/font/google";
-import Home from "./page";
 
 const montserrat = Montserrat({
-	weight: ["400", "700"],
+	weight: ["500", "900"],
 	subsets: ["latin"],
 	variable: "--font-montserrat",
 });
@@ -12,7 +11,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head />
-			<body className={`${montserrat.className} ms-32`}>{children}</body>
+			<body className={`${montserrat.className} ms-32 my-16`}>{children}</body>
 		</html>
 	);
 }
