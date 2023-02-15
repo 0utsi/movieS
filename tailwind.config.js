@@ -14,6 +14,10 @@ module.exports = {
 			gridTemplateColumns: {
 				fluid: 'repeat(auto-fit, minmax(15rem, 1fr))'
 			},
+			transitionDuration: {
+				'0': '0ms',
+				'2000': '2000ms',
+			},
 		},
 	},
 	plugins: [],

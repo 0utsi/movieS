@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "./page.css";
 import "../styling/globals.css";
 export default async function MovieDetail({ params }) {
@@ -11,6 +12,9 @@ export default async function MovieDetail({ params }) {
 	const response = await data.json();
 	return (
 		<div className="movieDetails">
+			<Link href={`/`} className="ml-32 italic hover:not-italic">
+				Back
+			</Link>
 			<div className="grid justify-items-center text-center">
 				<h2 className="text-3xl font-mono">{response.title}</h2>
 				<h3 className="text-xs font-sans my-1">{response.release_date}</h3>
