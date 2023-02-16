@@ -1,4 +1,6 @@
-import Movie from "../components/movie/Movie";
+import Movie from "./comp/Movie";
+import LogRocket from "logrocket";
+LogRocket.init("uyb6dy/fundev");
 interface ImovieData {
 	adult: boolean;
 	backdrop_path: string;
@@ -26,7 +28,7 @@ export default async function Home() {
 
 	return (
 		<main>
-			<div className="grid gap-8 grid-cols-fluid">
+			<div className="grid gap-8 grid-cols-fluid mx-9">
 				{movies.map((movie: ImovieData) => (
 					<Movie
 						key={movie.id}

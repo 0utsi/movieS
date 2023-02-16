@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import "./Movie.css";
 
 export default function Movie({ ...params }) {
 	const image_path = "https://image.tmdb.org/t/p/original";
@@ -12,11 +13,11 @@ export default function Movie({ ...params }) {
 
 			<Link href={`/${id}`}>
 				<Image
-					className="hover:scale-125 transition duration-150 ease-in-out"
+					className="hover:scale-125 smooth"
 					src={image_path + poster_path}
 					alt="asd"
-					width={400}
-					height={700}
+					width={600}
+					height={900}
 				/>
 				<h2 className="text-xs">{release_date}</h2>
 			</Link>
