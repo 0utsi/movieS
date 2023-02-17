@@ -1,6 +1,5 @@
-import Movie from "./comp/Movie";
-import LogRocket from "logrocket";
-LogRocket.init("uyb6dy/fundev");
+import Movie from "./comp/Movie/Movie";
+
 interface ImovieData {
 	adult: boolean;
 	backdrop_path: string;
