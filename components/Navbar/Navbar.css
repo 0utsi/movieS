@@ -4,4 +4,11 @@
 	justify-content: center;
 	margin-bottom: 2rem;
 	gap: 2rem;
+	margin: 0.2rem;
+}
+
+
+.navLink:hover  {
+	 border: 1px solid white;
+	border-radius: 5px;
 }

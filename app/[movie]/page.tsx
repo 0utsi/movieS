@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
 import "../styling/globals.css";
+
 export default async function MovieDetail({ params }) {
 	const image_path = "https://image.tmdb.org/t/p/original";
 	const { movie } = params;

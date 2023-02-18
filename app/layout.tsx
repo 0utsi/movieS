@@ -1,6 +1,6 @@
 import "./styling/globals.css";
 import { Montserrat } from "@next/font/google";
-import { Navbar } from "./comp/Navbar/Navbar";
+import { Navbar } from "../components/Navbar/Navbar";
 
 const montserrat = Montserrat({
 	weight: ["500", "900"],
