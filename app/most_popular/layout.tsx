@@ -1,6 +1,7 @@
-import "./styling/globals.css";
+"use client";
+import "../styling/globals.css";
 import { Montserrat } from "@next/font/google";
-import { Navbar } from "../components/Navbar/Navbar";
+import { Navbar } from "../../components/Navbar/Navbar";
 
 const montserrat = Montserrat({
 	weight: ["500", "900"],
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head />
-			<body className={`${montserrat.className} ms-32 my-8`}>{children}</body>
+			<body className={`${montserrat.className} ms-32 my-8`}>
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	);
 }

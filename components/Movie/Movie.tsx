@@ -9,17 +9,14 @@ export default function Movie({ ...params }) {
 
 	return (
 		<div className="movie text-center">
-			<h1 className="text-sm">{title}</h1>
-
 			<Link href={`/${id}`}>
 				<Image
-					className="hover:scale-125 smooth"
+					className="hover:scale-110 smooth"
 					src={image_path + poster_path}
 					alt="asd"
 					width={400}
 					height={700}
 				/>
-				<h2 className="text-xs">{release_date}</h2>
 			</Link>
 		</div>
 	);
